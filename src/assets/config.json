@@ -1,0 +1,22 @@
+{
+    "routes": [
+        {
+            "path": "mfe1",
+            "module": {
+                "remoteEntry": "http://localhost:9000/remoteEntry.js",
+                "remoteName": "mfe1",
+                "exposedModule": "./EntryModule"
+            },
+            "name": "EntryModule"
+        },
+        {
+            "path": "mfe2",
+            "module": {
+                "remoteEntry": "http://localhost:9001/remoteEntry.js",
+                "remoteName": "mfe2",
+                "exposedModule": "./mfe2/entry"
+            },
+            "name": "EntryModule2"
+        }
+    ]
+}
